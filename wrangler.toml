@@ -1,0 +1,12 @@
+account_id = ""
+name = "worker"
+type = "javascript"
+workers_dev = true
+site = { bucket = "./dist" }
+entry-point = "workers-site"
+
+[build]
+command = 'yarn install && yarn build'
+
+[build.upload]
+format = "service-worker"
